@@ -4,7 +4,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'mhinz/vim-signify'
 Plug 'Yggdroot/indentLine'
-Plug 'graywh/vim-colorindent'
 Plug 'flazz/vim-colorschemes'
-Plug 'nathanaelkane/vim-indent-guides'
+Plug 'vim-scripts/taglist.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'Valloric/YouCompleteMe',{'do':'./install.py'}
 call plug#end()
