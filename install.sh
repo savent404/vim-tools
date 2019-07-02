@@ -1,6 +1,9 @@
 # make sure we got tools to get scripts
 sudo apt install -y git curl
 sudo apt install -y cmake ctags
+sudo apt install -y clang-format
+sudo apt install -y cscope
+sudo apt install -y ctags
 
 # install vimrc file
 git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime

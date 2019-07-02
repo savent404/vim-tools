@@ -9,4 +9,5 @@ Plug 'vim-scripts/taglist.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'Valloric/YouCompleteMe',{'do':'./install.py'}
 Plug 'rhysd/vim-clang-format'
+Plug 'vim-scripts/autoload_cscope.vim'
 call plug#end()
