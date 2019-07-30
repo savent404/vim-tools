@@ -1,3 +1,11 @@
+" show tab
+ set list
+ set listchars=tab:>-,trail:-
+ 
+ " show eol white space
+ highlight WhitespaceEOL ctermbg=red guibg=red
+ match WhitespaceEOL /\s\+$/
+
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
