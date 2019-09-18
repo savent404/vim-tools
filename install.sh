@@ -1,9 +1,5 @@
 # make sure we got tools to get scripts
-sudo apt install -y git curl
-sudo apt install -y cmake ctags
-sudo apt install -y clang-format
-sudo apt install -y cscope
-sudo apt install -y ctags
+sudo apt install -y git curl clang-format cscope ctags clang llvm
 
 # install vimrc file
 git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
@@ -15,3 +11,5 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 # add self liked plugs
 cat plugs.vim >> ~/.vimrc
+
+echo let g:clang_library_path="\"`find /usr -name libclang* | grep "\.so*" | tail -n 1`\"" >> ~/.vimrc

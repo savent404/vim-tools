@@ -1,10 +1,10 @@
 " show tab
- set list
- set listchars=tab:>-,trail:-
+set list
+set listchars=tab:>-,trail:-
  
- " show eol white space
- highlight WhitespaceEOL ctermbg=red guibg=red
- match WhitespaceEOL /\s\+$/
+" show eol white space
+highlight WhitespaceEOL ctermbg=red guibg=red
+match WhitespaceEOL /\s\+$/
 
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
@@ -15,7 +15,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'flazz/vim-colorschemes'
 Plug 'vim-scripts/taglist.vim'
 Plug 'tpope/vim-fugitive'
-Plug 'Valloric/YouCompleteMe',{'do':'./install.py'}
 Plug 'rhysd/vim-clang-format'
 Plug 'vim-scripts/autoload_cscope.vim'
+Plug 'xavierd/clang_complete'
 call plug#end()
