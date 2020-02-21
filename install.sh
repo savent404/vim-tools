@@ -1,5 +1,5 @@
 # make sure we got tools to get scripts
-sudo apt install -y git curl clang-format cscope ctags clang llvm
+sudo apt install -y git curl clang-format cscope ctags --without-recommends
 
 # install vimrc file
 git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
