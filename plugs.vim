@@ -18,4 +18,5 @@ Plug 'tpope/vim-fugitive'
 Plug 'rhysd/vim-clang-format'
 Plug 'vim-scripts/autoload_cscope.vim'
 Plug 'xavierd/clang_complete'
+Plug 'honza/vim-snippets'
 call plug#end()
