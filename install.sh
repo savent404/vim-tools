@@ -10,6 +10,6 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # add self liked plugs
-cat plugs.vim >> ~/.vimrc
+cat $(dirname $0)/plugs.vim >> ~/.vimrc
 
 echo let g:clang_library_path="\"`find /usr -name libclang* | grep "\.so*" | tail -n 1`\"" >> ~/.vimrc
