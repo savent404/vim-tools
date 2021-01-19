@@ -1,7 +1,7 @@
 #/bin/sh
 
 # install zsh and oh-my-zsh
-sudo apt install zsh fonts-powerline
+sudo apt install -y curl zsh fonts-powerline
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # install powerlevel10k theme
@@ -14,7 +14,7 @@ echo "source ~/.bashrc" >> ~/.zshrc
 
 # install plugins
 # autojump
-sudo apt install autojump
+sudo apt install -y autojump
 echo '. /usr/share/autojump/autojump.sh'>>~/.zshrc
 
 # zsh-syntax-highlighting
