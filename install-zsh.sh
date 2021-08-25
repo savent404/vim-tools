@@ -19,8 +19,9 @@ echo '. /usr/share/autojump/autojump.sh'>>~/.zshrc
 
 # zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+zsh -c "source ~/.zshrc && omz plugin enable zsh-syntax-highlighting"
 
 # zsh-autosuggestions
 git clone git://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+zsh -c "source ~/.zshrc && omz plugin enable zsh-autosuggestions"
 
-sed -i 's/^plugins=.*/plugins=(git autojump zsh-syntax-highlighting zsh-autosuggestions)/g' ~/.zshrc
