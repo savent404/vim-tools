@@ -9,13 +9,10 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 # set ZSH_THEME="powerlevel10k/powerlevel10k" in ~/.zshrc.
 sed -i 's/^ZSH_THEME=.*/ZSH_THEME="powerlevel10k\/powerlevel10k"/g' ~/.zshrc
 
-# keep bashrc
-echo "source ~/.bashrc" >> ~/.zshrc
-
 # install plugins
 # autojump
 sudo apt install -y autojump
-echo '. /usr/share/autojump/autojump.sh'>>~/.zshrc
+zsh -c "source ~/.zshrc && omz plugin enable autojump"
 
 # zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
